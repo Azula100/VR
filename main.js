@@ -25,7 +25,9 @@ const ambLight = new THREE.AmbientLight(0xffffff, 0.5);
 scene.add(ambLight);
 
 const loader = new GLTFLoader();
-loader.load('dasgal122.glb', function(gltf){
+let komMouseKey1;
+let router;
+loader.load('lab1.glb', function(gltf){
     const model = gltf.scene;
     scene.add(model);
 });
